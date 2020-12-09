@@ -14,7 +14,7 @@ describe("Color Code Converter API", function () {
     it("returns the color in hex", (done) => {
       request(url, function (error, response, body) {
         expect(body).to.equal("ffffff");
-        done()
+        done();
       });
     });
   });
@@ -29,7 +29,7 @@ describe("Color Code Converter API", function () {
     });
     it("returns the color in RGB", (done) => {
       request(url, function (error, response, body) {
-        expect(body).to.equal("[0, 255, 0]");
+        expect(body).to.equal("[0,255,0]");
         done();
       });
     });
